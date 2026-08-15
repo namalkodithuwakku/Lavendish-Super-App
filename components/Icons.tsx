@@ -1,0 +1,13 @@
+import React from 'react';
+const I=({children,size=22}:{children:React.ReactNode,size?:number})=><svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{children}</svg>;
+export const HomeIcon=()=> <I><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10.5V20h13v-9.5"/><path d="M9.5 20v-5.5h5V20"/></I>;
+export const HotelIcon=()=> <I><path d="M4 20V5h10v15"/><path d="M14 10h6v10"/><path d="M7.5 8h3M7.5 12h3M7.5 16h3M17 13h1M17 16h1"/></I>;
+export const TagIcon=()=> <I><path d="M20 13 13 20 4 11V4h7z"/><circle cx="8.5" cy="8.5" r="1"/></I>;
+export const CalendarIcon=()=> <I><path d="M5 4v3M19 4v3M3.5 9h17M5 6h14a2 2 0 0 1 2 2v11H3V8a2 2 0 0 1 2-2Z"/><path d="M7 13h3M14 13h3M7 16h3"/></I>;
+export const UserIcon=()=> <I><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-4 3.2-6 7-6s6.2 2 7 6"/></I>;
+export const PhoneIcon=()=> <I><path d="M6.6 3.5 9 8 7.4 9.7a15 15 0 0 0 6.9 6.9L16 15l4.5 2.4-.6 3c-.2.9-1 1.6-2 1.6C9.1 22 2 14.9 2 6.1c0-1 .7-1.8 1.6-2z"/></I>;
+export const WhatsAppIcon=()=> <I><path d="M20.4 12a8.4 8.4 0 0 1-12.5 7.3L3 20.6l1.3-4.7A8.4 8.4 0 1 1 20.4 12Z"/><path d="M8.3 8.1c.3-.5.6-.5.9 0l1 2c.2.4.1.7-.2 1l-.6.6c.8 1.5 1.9 2.6 3.4 3.3l.6-.7c.3-.3.6-.4 1-.2l2 .9c.4.2.5.5.4.9-.2.8-1 1.6-1.9 1.7-2 .2-4.3-1-6-2.7-1.8-1.8-3-4.2-2.7-6 .2-.3.8-.6 1.1-.8Z"/></I>;
+export const HeartIcon=({filled=false}:{filled?:boolean})=> <I><path fill={filled?'currentColor':'none'} d="M20.8 5.8a5 5 0 0 0-7.1 0L12 7.5l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 21l8.8-8.1a5 5 0 0 0 0-7.1Z"/></I>;
+export const MapIcon=()=> <I><path d="m3 6 5-2 8 2 5-2v14l-5 2-8-2-5 2z"/><path d="M8 4v14M16 6v14"/></I>;
+export const BellIcon=()=> <I><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></I>;
+export const Chevron=()=> <I size={18}><path d="m9 18 6-6-6-6"/></I>;
