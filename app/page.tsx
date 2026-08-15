@@ -4,13 +4,15 @@ import {hotels,BOOKING_URL,waLink,CENTRAL_PHONE} from '@/lib/hotels';
 import {offers} from '@/lib/offers';
 import {PhoneIcon,WhatsAppIcon,CalendarIcon,TagIcon,Chevron} from '@/components/Icons';
 
+const HERO_IMAGE='https://cf.bstatic.com/xdata/images/hotel/max1024x768/707036004.jpg?hp=1&k=7e90322d9be9cc1404a1ea1e6a5c5c1ee453ed7bf77c9b13a37a6c22a5d6ed8b&o=';
+
 export default function Home(){
- const featured=hotels.find(h=>h.slug==='wild-safari-wasgamuwa') || hotels[0];
+ const featured=hotels.find(h=>h.slug==='grand-tamarind-lake') || hotels[0];
  return <>
  <section className="welcome"><div><p>Good evening,</p><h1>Welcome to <span>Lavendish</span></h1></div><span className="memberPill">Guest</span></section>
- <section className="heroCard premiumHero" style={{backgroundImage:`linear-gradient(180deg,rgba(16,11,18,.05),rgba(16,11,18,.79)),url(${featured.image})`}}>
-   <div className="heroTopline"><span>{featured.destination}</span><span>Lavendish Collection</span></div>
-   <div className="heroCopy"><span>YOUR NEXT ESCAPE</span><h2>Beautiful stays. Effortless booking.</h2><p>Discover Lavendish across Sri Lanka, with call, WhatsApp and booking always one touch away.</p><div className="heroButtons"><Link href="/hotels" className="pillButton heroPrimary">Explore hotels <Chevron/></Link><a href={BOOKING_URL} className="pillButton heroGlass">Book a stay</a></div></div>
+ <section className="heroCard premiumHero minimalHero" style={{backgroundImage:`linear-gradient(180deg,rgba(16,11,18,.03),rgba(16,11,18,.58)),url(${HERO_IMAGE})`}}>
+   <div className="heroTopline"><span>{featured.destination}</span><span>Grand Tamarind Lake</span></div>
+   <div className="heroCopy minimalHeroCopy"><span>DISCOVER LAVENDISH</span><h2>Stay somewhere beautiful.</h2><div className="heroButtons"><Link href="/hotels" className="pillButton heroPrimary">Explore hotels <Chevron/></Link></div></div>
  </section>
  <section className="quickActions premiumQuickActions">
    <a className="quickCall" href={`tel:${CENTRAL_PHONE}`}><b><PhoneIcon/></b><span><strong>Call</strong><small>Talk to reservations</small></span><i>→</i></a>
