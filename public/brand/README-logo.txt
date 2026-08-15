@@ -1,0 +1,1 @@
+Use the official supplied Lavendish logo artwork unchanged. The app header uses the original logo asset on a white/transparent visual surface; do not redraw or recolour the mark.
