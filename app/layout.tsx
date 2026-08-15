@@ -1,5 +1,6 @@
 import type {Metadata,Viewport} from 'next';
 import './globals.css';
+import './premium.css';
 import BottomNav from '@/components/BottomNav';
 import AppHeader from '@/components/AppHeader';
 import RegisterSW from '@/components/RegisterSW';
